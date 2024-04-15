@@ -1,6 +1,8 @@
 pipeline {
   agent any
-  tools 'M2_HOME'
+  tools {
+    maven 'M2_HPME'
+  }
   stages{
     stage('maven commands'){
       steps{
